@@ -1,9 +1,6 @@
 import { createConnection } from '$lib/db/mysql';
 import { redirect } from '@sveltejs/kit';
 
-if(!locals.user || locals.user.role !== 'admin'){
-	redirect(302,'/login');
-}
 
 
 export const actions = {
